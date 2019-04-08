@@ -14,11 +14,14 @@ if (document.form.password.value==document.form.login.value){
     }
     else{
          alert("Nombre de usuario y contraseña deben de ser iguales.");
+         var texto = document.getElementById("texto");
+         texto.innerHTML= "Nombre de usuario y contraseña deben de ser iguales.";
     }
 }
 </SCRIPT>
 <FORM name=form action="MNoelChat.HTML">
 
+<p style="text-align:center;"> <span id = "texto"></span> </p>
 <p style="text-align:center;"> <INPUT type=text name=login placeholder="@ Username"> </p>
 <p style="text-align:center;"> <INPUT type=password name=password placeholder="Text input"> </p>
 <p style="text-align:center;"> <INPUT onclick=go() type=button value=Login> </p>
