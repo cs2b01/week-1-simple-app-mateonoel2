@@ -2,11 +2,27 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Title of the document</title>
+<title>MNoel Chat</title>
 </head>
-
 <body>
-Content of the document......
-</body>
 
+  <h1> <p style="text-align:center;"> MNoel Chat</p> </h1>
+<SCRIPT  language=JavaScript>
+function go(){
+if (document.form.password.value==document.form.login.value){
+        document.form.submit();
+    }
+    else{
+         alert("Nombre de usuario y contraseña deben de ser iguales.");
+    }
+}
+</SCRIPT>
+<FORM name=form action="MNoelChat.HTML">
+
+<p style="text-align:center;"> <INPUT type=text name=login placeholder="@ Username"> </p>
+<p style="text-align:center;"> <INPUT type=password name=password placeholder="Text input"> </p>
+<p style="text-align:center;"> <INPUT onclick=go() type=button value=Login> </p>
+
+</FORM>
+</body>
 </html>
